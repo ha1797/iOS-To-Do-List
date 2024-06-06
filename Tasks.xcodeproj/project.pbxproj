@@ -16,6 +16,8 @@
 		0C1A3ABD2C10DC300002D68B /* TasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A3ABC2C10DC300002D68B /* TasksTests.swift */; };
 		0C1A3AC72C10DC300002D68B /* TasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A3AC62C10DC300002D68B /* TasksUITests.swift */; };
 		0C1A3AC92C10DC300002D68B /* TasksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A3AC82C10DC300002D68B /* TasksUITestsLaunchTests.swift */; };
+		0C91D6342C122F5600359882 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91D6332C122F5600359882 /* EntryViewController.swift */; };
+		0C91D6362C122F8000359882 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91D6352C122F8000359882 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0C1A3AC22C10DC300002D68B /* TasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1A3AC62C10DC300002D68B /* TasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUITests.swift; sourceTree = "<group>"; };
 		0C1A3AC82C10DC300002D68B /* TasksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C91D6332C122F5600359882 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		0C91D6352C122F8000359882 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0C1A3AAE2C10DC2F0002D68B /* Assets.xcassets */,
 				0C1A3AB02C10DC300002D68B /* LaunchScreen.storyboard */,
 				0C1A3AB32C10DC300002D68B /* Info.plist */,
+				0C91D6332C122F5600359882 /* EntryViewController.swift */,
+				0C91D6352C122F8000359882 /* TaskViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1A3AAA2C10DC2E0002D68B /* ViewController.swift in Sources */,
+				0C91D6342C122F5600359882 /* EntryViewController.swift in Sources */,
+				0C91D6362C122F8000359882 /* TaskViewController.swift in Sources */,
 				0C1A3AA62C10DC2E0002D68B /* AppDelegate.swift in Sources */,
 				0C1A3AA82C10DC2E0002D68B /* SceneDelegate.swift in Sources */,
 			);
