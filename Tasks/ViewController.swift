@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return tasks.count
         }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.defaultContentConfiguration().text = tasks[indexPath.row]
+            return cell
+        }
     }
 
 
