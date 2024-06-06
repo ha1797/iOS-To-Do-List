@@ -12,9 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var tasks = [String]()
+//    var tasks: [String] = ["1", "2", "3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        tableView.dataSource = self
         
         // Get all current saved tasks
     }
