@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        tableView.dataSource = self
+        self.title = "Tasks"
         
         // Get all current saved tasks
     }
