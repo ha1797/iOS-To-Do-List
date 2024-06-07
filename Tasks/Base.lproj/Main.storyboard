@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="-208.3969465648855" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="8EA-Hz-biH">
             <objects>
-                <viewController id="VWN-Sj-Szz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="VWN-Sj-Szz" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ead-X3-qFg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
