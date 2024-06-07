@@ -41,7 +41,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ubd-dP-4i6">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="zve-Ea-VHY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="zve-Ea-VHY">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="wPR-kD-G1h"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="srg-XQ-h3T" id="sj7-W7-HX2"/>
@@ -51,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="718.32061068702285" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
         <scene sceneID="S4y-he-gUH">
             <objects>
-                <viewController id="0U7-N7-OCr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="task" id="0U7-N7-OCr" customClass="TaskViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ufr-co-BB6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,20 +88,43 @@
             </objects>
             <point key="canvasLocation" x="-208.3969465648855" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="8EA-Hz-biH">
             <objects>
-                <viewController id="VWN-Sj-Szz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="VWN-Sj-Szz" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ead-X3-qFg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ID-4c-SPy">
+                                <rect key="frame" x="20" y="79" width="97" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="bd4-mI-WE9"/>
+                                    <constraint firstAttribute="height" constant="52" id="cxB-X5-9yd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="dhR-f4-Ug1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="I37-4I-e9S"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1ID-4c-SPy" firstAttribute="top" secondItem="I37-4I-e9S" secondAttribute="top" constant="20" id="5Jb-rl-AgP"/>
+                            <constraint firstItem="I37-4I-e9S" firstAttribute="bottom" secondItem="1ID-4c-SPy" secondAttribute="bottom" constant="703" id="FOP-0V-Kyi"/>
+                            <constraint firstItem="I37-4I-e9S" firstAttribute="bottom" secondItem="1ID-4c-SPy" secondAttribute="bottom" constant="703" id="SbS-Iy-c7W"/>
+                            <constraint firstItem="1ID-4c-SPy" firstAttribute="top" secondItem="I37-4I-e9S" secondAttribute="top" constant="20" id="TZk-Qa-DJI"/>
+                            <constraint firstItem="1ID-4c-SPy" firstAttribute="leading" secondItem="I37-4I-e9S" secondAttribute="leading" constant="20" id="m6g-nX-g6k"/>
+                            <constraint firstItem="I37-4I-e9S" firstAttribute="trailing" secondItem="1ID-4c-SPy" secondAttribute="trailing" constant="20" id="oLv-wd-bys"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="1ID-4c-SPy" id="5on-Xe-aBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9x-a6-Hzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="-673"/>
+            <point key="canvasLocation" x="548.85496183206101" y="-673.23943661971839"/>
         </scene>
     </scenes>
     <resources>
