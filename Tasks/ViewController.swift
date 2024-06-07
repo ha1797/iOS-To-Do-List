@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        tableView.dataSource = self
         self.title = "Tasks"
+        tableView.delegate = self
+        tableView.dataSource = self
         
         // Get all current saved tasks
     }
