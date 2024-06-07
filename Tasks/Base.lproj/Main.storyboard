@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="718.32061068702285" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
         <scene sceneID="S4y-he-gUH">
             <objects>
-                <viewController id="0U7-N7-OCr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="task" id="0U7-N7-OCr" customClass="TaskViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ufr-co-BB6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
