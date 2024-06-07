@@ -17,5 +17,10 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        saveTask()
+        return true
+    }
 
 }
