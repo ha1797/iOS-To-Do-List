@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     }
     
     func updateTasks() {
+        
+        tasks.removeAll()
         // tutorial used guard instead of if
         // if cannot be used if contains else at end like this example
         guard let count = UserDefaults().value(forKey: "count") as? Int else {
