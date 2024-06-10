@@ -68,6 +68,10 @@ extension ViewController: UITableViewDelegate {
     // handles taps on a cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let vc = storyboard?.instantiateViewController(identifier: "task") as! TaskViewController
+        vc.title = "New Task"
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
